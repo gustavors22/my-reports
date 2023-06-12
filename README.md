@@ -1,127 +1,111 @@
-<!-- # xtreme-admin-lite-- >
-<!-- Heading of Template -->
-<h1>
-  <a href="https://www.wrappixel.com/templates/xtreme-next-js-free-admin-template/">Xtreme Next Js Free Admin</a>
-</h1>
+# [Horizon UI NextJS ⚡️](https://horizon-ui.com/horizon-ui-chakra-nextjs) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://horizon-ui.com/&text=Check%20Horizon%20UI,%20the%20trendiest%20open-source%20admin%20template%20for%20Chakra%20UI%20&%20React!)
 
-<!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/xtreme-next-js-free.jpg">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/xtreme-next-js-free.jpg" />
-</a>
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-ui-chakra-nextjs.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra-nextjs/issues?q=is%3Aopen+is%3Aissue)
 
-<!-- Description of Template -->
-<p>
-Xtreme admin is Free NextJs React admin Template. It allows you to create stunning backend application and more. It comes with ready to use UI Blocks & Elements to help level up the design and aesthetics of your project. Xtreme Next Js is built on Reactstrap, which is a responsive React Framework.
+<p>&nbsp;</p>
 
-The free version comes with elegant grid design that helps you play around with the look and feel of the web app the way you want. Even if you're a novice developer, clean code and easy to customize will get you up to speed in no time.
+[<img alt="Horizon UI NextJS" src="https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png" /> ](https://github.com/horizon-ui/horizon-ui-chakra-nextjs)
 
-If you're looking for the best React templates across the web, we've curated a list that's sure to meet your needs. Just pick from our wide variety of free responsive react templates that work seamlessly across devices and get started today!
-</p>
-<p>
-  It allows building high-performing web-applications and other projects in a couple of days giving a seamless experience. You also get a variety of widgets, elements, page templates, icons and much more when you download it. The best part of this free admin theme bootstrap 5 is its full responsiveness and savior when you are low on budget. For all commercial projects, you can opt-in pro version of this template.
- </p>
-
-<!-- <h4><a href="https://wrappixel.com/demos/free-admin-templates/xtreme-admin-lite/xtreme-html/ltr/index.html">Free Version Demo Link</a></h4> -->
-
-<!-- ## Pro Version -->
-
-<!-- <a href="https://www.wrappixel.com/templates/xtremeadmin/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/xtreme-admin-bootstrap-nw-1.jpg"/></a><br/>
-<h4><a href="https://www.wrappixel.com/demos/admin-templates/xtreme-admin/html/ltr/index.html">Demo</a></h4> -->
-
-<!-- Versions of Template -->
-<h2><a id="user-content-versions" class="anchor" aria-hidden="true" href="#versions"></a>Versions</h2>
-<table>
-<thead>
-<tr>
-<th>Bootstrap</th>
-<th>React</th>
-<th>Vue</th>
-<th>Angular</th>
-<th>NextJs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-  <a href="https://www.wrappixel.com/templates/xtremeadmin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-bootstrap-admin-y.jpg" alt="Xtreme Template  Bootstrap" style="max-width:150px;">
-  </a>
-</td>
-<td>
-  <a href="https://www.wrappixel.com/templates/xtreme-react-redux-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-react-admin-template-y.jpg" alt="Xtreme Template  React" style="max-width:150px;">
-  </a>
-</td>
-<td>
-  <a href="https://www.wrappixel.com/templates/xtreme-vuesax-admin-pro/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-vuesax-admin-y.jpg" alt="Xtreme Template  Vue" style="max-width:150px;">
-  </a>
-</td>
-  <td>
-  <a href="https://www.wrappixel.com/templates/xtreme-angular-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-angular-admin-y.jpg" alt="Xtreme Template  Angular" style="max-width:150px;">
-  </a>
-</td>
-    <td>
-  <a href="https://www.wrappixel.com/templates/xtreme-nextjs-admin-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/02/xtreme-nextjs-image.jpg" alt="Xtreme Template  Angular" style="max-width:150px;">
-  </a>
-</td>
-</tr>
-</tbody>
-</table>
-
-<!-- Resources of Template -->
-<h2>Resources</h2>
-<ul>
-<li>  
-  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/nextjs/xtreme-nextjs-admin-free-dist/landingpage/index.html" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/nextjs/xtreme-nextjs-admin-free-dist/landingpage/index.html</a>
-</li>
-<li>
-    Download Page: <a href="https://www.wrappixel.com/templates/xtreme-next-js-free-admin-template/" rel="nofollow">
-  https://www.wrappixel.com/templates/xtreme-next-js-free-admin-template/</a>
-</li>
-<li>
-    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
-</li>
-</ul>
-
-<!-- Licensing of Template -->
-<h2>Licensing</h2>
-<ul>
-  <li>
-    <p>Copyright 2022 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
-  </li>
-  <li>
-    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
-  </li>
-</ul>
+<p>&nbsp;</p>
 
 
-<!-- Upgrade to Premium version of Template -->
-<h2>Upgrade to Premium version</h2>
-<a target="_blank" href="https://www.wrappixel.com/templates/xtreme-nextjs-admin-dashboard/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/02/xtreme-nextjs-image.jpg" />
-</a>
-<p>
-   Checkout our premium version of Xtreme Bootstrap Admin for lots more features and ready to use page templates.<br>
-   <a href="https://xtreme-nextjs-admin.vercel.app/dashboards/classic">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/xtreme-nextjs-admin-dashboard/">Download</a>
-</p>
+Get started and build your dream web app with Horizon UI NextJS, the most trendiest & innovative Open Source Admin Template for Chakra UI, React & NextJS!
 
-<!-- Useful Links of Template -->
-<h2>Useful Links</h2>
-<ul>
-<li><a href="https://www.wrappixel.com/templates/category/admin-template/">Admin Panel Template</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/">Free Bootstrap 5 Themes</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap 5 Admin Template</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Angular JS Dashboard</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Website Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vue JS Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/free-templates/">Free Themes</a> from WrapPixel</li>
-</ul>
+---
 
-<!-- Social Media of Wrappixel -->
-<h2>Social Media</h2>
-<p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
-<p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
-<p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
+### Introduction
+
+Designed for those who like modern UI elements and beautiful websites. Made of
+hundred of elements, designed blocks and fully coded pages, Horizon UI is ready
+to help you create stunning websites and webapps.
+
+Save hundreds of hours trying to create and develop a dashboard from scratch.
+The fastest, most responsive & trendiest dashboard is here. Seriously.
+
+With Horizon UI you will find many examples for pages like NFTs Pages,
+Authentication Pages, Profile and so on. Just choose between a Basic Design or a
+cover and you are good to go!
+
+### 🎉 [NEW] Horizon UI Components
+All the main components from both versions, this will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
+<a href="https://horizon-ui.com/components/?ref=readme-horizon-nextjs" target="_blank">See all components</a>
+
+
+### Documentation
+
+Each element is well presented in a very complex documentation. You can read
+more about the <a href="https://horizon-ui.com/documentation/docs/introduction?ref=readme-horizon-nextjs" target="_blank">documentation
+here.</a>
+
+### Quick Start
+
+Install Horizon UI by running either of the following:
+
+- Install NodeJS LTS from [NodeJs Official Page](https://nodejs.org/en/?ref=horizon-documentation)
+  (NOTE: Product only works with LTS version)
+
+- Install Yarn CLI from [Yarn Official Page](https://yarnpkg.com/cli/install?ref=horizon-documentation)
+
+Clone the repository with the following command:
+
+```bash
+git clone https://github.com/horizon-ui/horizon-ui-chakra-nextjs.git
+```
+
+Run in terminal this command:
+
+```bash
+yarn install
+```
+
+Then run this command to start your local server
+
+```bash
+yarn dev
+```
+
+### Example Pages
+
+If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View <a href="https://horizon-ui.com/horizon-ui-chakra-nextjs/?ref=readme-horizon-nextjs" target="_blank">example pages here.</a>
+
+### Versions
+
+| Free Version                                                                                                       | PRO Version                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| [![Horizon UI NextJS](https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png)](https://www.horizon-ui.com/?ref=readme-horizon-nextjs) | [![Horizon UI NextJS PRO](https://i.ibb.co/581cvkJ/horizon-ui-next-pro.png")](https://www.horizon-ui.com/pro?ref=readme-horizon-nextjs) |
+
+### Figma Version
+
+Horizon UI is available in Figma format as well! Check it out on Figma
+Community! 🎨
+[See the Horizon UI Figma design files](https://bit.ly/horizon-figma)
+
+### Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the Horizon UI. Here are
+some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Horizon UI Dashbaord.
+   Check the CHANGELOG from your dashboard on our
+   [CHANGE LOG File](https://github.com/horizon-ui/horizon-ui-chakra-nextjs/blob/main/CHANGELOG.md?ref=readme-horizon-nextjs).
+2. Providing us reproducible steps for the issue will shorten the time it takes
+   for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you
+   encountered the issue might help.
+
+---
+
+### Community
+
+Connect with the community! Feel free to ask questions, report issues, and meet
+new people that already use Horizon UI!
+
+💬 [Join the #HorizonUI Discord Community!](https://discord.gg/f6tEKFBd4m)
+
+### Copyright and license
+
+⭐️ [Copyright 2022 Simmmple ](https://www.simmmple.com/?ref=readme-horizon-nextjs)
+
+📄 [Horizon UI License](https://www.simmmple.com/licenses?ref=readme-horizon-nextjs)
