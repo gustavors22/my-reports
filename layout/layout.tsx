@@ -19,6 +19,7 @@ const Layout = ({ children }: ChildContainerProps) => {
     const sidebarRef = useRef<HTMLDivElement>(null);
 
     const router = useRouter();
+
     const [bindMenuOutsideClickListener, unbindMenuOutsideClickListener] = useEventListener({
         type: 'click',
         listener: (event) => {

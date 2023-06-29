@@ -8,6 +8,8 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import '../styles/layout/layout.scss';
 import '../styles/demo/Demos.scss';
+import { SessionProvider } from 'next-auth/react';
+import CheckAuth from '../components/CheckAuth';
 
 type Props = AppProps & {
     Component: Page;
@@ -18,11 +20,15 @@ export default function MyApp({ Component, pageProps }: Props) {
         return <LayoutProvider>{Component.getLayout(<Component {...pageProps} />)}</LayoutProvider>;
     } else {
         return (
-            <LayoutProvider>
-                <Layout>
-                    <Component {...pageProps} />
-                </Layout>
-            </LayoutProvider>
+            <SessionProvider session={pageProps.session}>
+                <CheckAuth>
+                    <LayoutProvider>
+                        <Layout>
+                                <Component {...pageProps} />
+                        </Layout>
+                    </LayoutProvider>
+                </CheckAuth>
+            </SessionProvider>
         );
     }
 }

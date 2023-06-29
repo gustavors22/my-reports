@@ -10,7 +10,10 @@ interface ICredentials {
 
 interface LoginResponse {
     token: string;
-    user: User;
+    user: {
+        id: string | undefined;
+        email: string;
+    };
 }
 
 class AuthService {
@@ -34,7 +37,13 @@ class AuthService {
     
         const token = this.jwtService.sign({ id: user.id });
         
-        return { token, user };
+        return { 
+            token, 
+            user: {
+                id: user.id,
+                email: user.email,
+            }
+        };
     }
 }
 

@@ -5,6 +5,12 @@ import UserRepository from "../../../modules/user/repositories/UserRepository";
 import AuthService from "../../../modules/auth/services/authService";
 import jwtService from "../../../modules/auth/services/jwtService";
 
+let authUser: any = null;
+
+function setAuthUser(user: any) {
+  authUser = user;
+}
+
 export default NextAuth({
     secret: process.env.NEXTAUTH_TOKEN,
     session: {
@@ -28,17 +34,17 @@ export default NextAuth({
 
               const authService = new AuthService(UserRepository, jwtService)
               const auth = await authService.login(credentials) as any;
-
-              return { id: auth.token };
+              setAuthUser(auth.user);          
+              return { id: auth.token,  account: auth.user };
             }
         })
     ],
     callbacks: {
-      async jwt({ token, account}) {
+      async jwt({ token, account }) {
         if (token.sub) {
           return token;
         }
-
+        
         throw new Error('User Invalid');
       },
       async session({ session, user, token }) {
@@ -46,7 +52,9 @@ export default NextAuth({
           throw new Error('Session Invalid');
         }
         
-        return { ...session, accessToken: token.sub };
+        session.user = authUser;
+
+        return session;
       }
     },
 });

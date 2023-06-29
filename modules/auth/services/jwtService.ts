@@ -8,7 +8,7 @@ class JwtService implements IJwtService {
         this.secret = process.env.JWT_SECRET || "defaultSecret";
     }
 
-    public sign(payload: any): string {
+    public sign(payload: string | object): string {
         const token = jwt.sign(payload, this.secret, {expiresIn: '1d'});
         return token;
     }

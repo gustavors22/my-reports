@@ -11,6 +11,7 @@ import { LayoutContext } from '../layout/context/layoutcontext';
 import Link from 'next/link';
 import { Demo } from '../types/types';
 import { ChartData, ChartOptions } from 'chart.js';
+import { useSession } from 'next-auth/react';
 
 const lineData: ChartData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -383,5 +384,7 @@ const Dashboard = () => {
         </div>
     );
 };
+
+Dashboard.auth = true;
 
 export default Dashboard;
