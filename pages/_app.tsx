@@ -8,6 +8,7 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import '../styles/layout/layout.scss';
 import '../styles/demo/Demos.scss';
+import '../styles/pages/pages.scss';
 import { SessionProvider } from 'next-auth/react';
 import CheckAuth from '../components/CheckAuth';
 
