@@ -8,6 +8,7 @@ import { Column } from 'primereact/column';
 
 export default function Hotmart() {
     const [webhookLink, setWebhookLink] = useState<string>('');
+    const [events, setEvents] = useState<any[]>([]);
 
     useEffect(() => {
         setWebhookLink("https://teste.com/webhook.com")

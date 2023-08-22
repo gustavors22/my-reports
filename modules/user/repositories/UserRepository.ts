@@ -1,11 +1,11 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../../config/db"
 import bcrypt from "bcryptjs";
 import User from "../entity/User";
+import IUserRepository from "./IUserRepository";
 
-const prisma = new PrismaClient();
 const process = require("process");
 
-class UserRepository {
+class UserRepository implements IUserRepository {
     public async create(user: User): Promise<User> {
         const saltRounds = process.env.SALT_ROUNDS;
         user.password = await bcrypt.hash(user.password, parseInt(saltRounds));
@@ -27,6 +27,16 @@ class UserRepository {
         const user = await prisma.user.findUnique({
             where: {
                 email
+            }
+        });
+
+        return user;
+    }
+
+    public async findById(id: string): Promise<User | null> {
+        const user = await prisma.user.findUnique({
+            where: {
+                id
             }
         });
 

@@ -24,6 +24,6 @@ export default function CheckAuth(props: any): JSX.Element {
     if (session.status === 'unauthenticated') {
         router.push('/auth/login');
     }
-    
+
     return props.children;
 }

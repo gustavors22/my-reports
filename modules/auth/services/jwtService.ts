@@ -12,6 +12,11 @@ class JwtService implements IJwtService {
         const token = jwt.sign(payload, this.secret, {expiresIn: '1d'});
         return token;
     }
+
+    public verify(token: string): string | object {
+        const decoded = jwt.verify(token, this.secret);
+        return decoded;
+    }
 }
 
 export default new JwtService();

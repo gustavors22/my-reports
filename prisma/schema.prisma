@@ -15,24 +15,15 @@ model User {
   authToken String?
   createdAt DateTime     @default(now())
   updatedAt DateTime     @updatedAt
-  posts     Itegration[]
+  capturedEvents     CapturedEvents[]
 }
 
-model PlatformsForIntegration {
-  id           String       @id @default(cuid())
-  name         String
-  url          String
-  createdAt    DateTime     @default(now())
-  updatedAt    DateTime     @updatedAt
-  integrations Itegration[]
-}
-
-model Itegration {
-  id                      String                  @id @default(cuid())
-  userId                  String
-  platformId              String
-  createdAt               DateTime                @default(now())
-  updatedAt               DateTime                @updatedAt
-  platformsForIntegration PlatformsForIntegration @relation(fields: [platformId], references: [id])
-  user                    User                    @relation(fields: [userId], references: [id])
+model CapturedEvents {
+  id        String       @id @default(cuid())
+  user      User         @relation(fields: [userId], references: [id])
+  userId    String
+  platform  String
+  event     Json
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
 }
