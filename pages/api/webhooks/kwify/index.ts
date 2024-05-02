@@ -57,7 +57,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 'Authorization': `Bearer ${manyChatToken}`
             },
             body: JSON.stringify({
-                subscriber_id: isSubscriberExists.id,
+                subscriber_id: isSubscriberExists.id ,
                 tag_name: TAGS_FOR_REMOVE[webhookEvent as keyof typeof TAGS_FOR_REMOVE]
             })
         })
