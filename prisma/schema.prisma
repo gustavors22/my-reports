@@ -4,26 +4,14 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgres://postgres.dihwiqbnltxbmloukohv:@Manychat-kwify@aws-0-us-west-1.pooler.supabase.com:6543/postgres"
+  directUrl = "postgres://postgres.dihwiqbnltxbmloukohv:@Manychat-kwify@aws-0-us-west-1.pooler.supabase.com:5432/postgres"
 }
 
-model User {
-  id        String       @id @default(cuid())
-  email     String       @unique
-  phone     String?
-  password  String
-  authToken String?
-  createdAt DateTime     @default(now())
-  updatedAt DateTime     @updatedAt
-  capturedEvents     CapturedEvents[]
-}
+// @Manychat-kwify
 
-model CapturedEvents {
+model Subscriber {
   id        String       @id @default(cuid())
-  user      User         @relation(fields: [userId], references: [id])
-  userId    String
-  platform  String
-  event     Json
-  createdAt DateTime     @default(now())
-  updatedAt DateTime     @updatedAt
+  manychatId String
+  phone     String
 }
