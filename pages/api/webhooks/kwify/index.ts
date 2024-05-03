@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import subscribers from './subscribers.json';
 
+import { prisma } from '../../../../modules/config/db';
 const TAGS = {
     pix_created: 'PIX_GERADO',
     refused: 'CARTAO_RECUSADO',
@@ -16,6 +16,10 @@ const TAGS_FOR_REMOVE = {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+    if (req.method !== 'POST') {
+        return res.status(405).json({ message: 'Method Not Allowed' })
+    }
+
     const data = req.body
 
     console.log('Webhook kwify', data);
@@ -39,7 +43,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const manyChatToken = '1283798:895c62ccf819a43599d91acac7e39511'
 
-    const isSubscriberExists = subscribers.data.filter(subscriber => subscriber.phone === mobile)[0]
+    const isSubscriberExists = await prisma.subscriber.findFirst({
+        where: {
+            phone: mobile
+        }
+    })
 
     console.log('isSubscriberExists:', isSubscriberExists)
     
@@ -108,15 +116,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         console.log('ManyChat response:', response.status);
         console.log('ManyChat response:', createdSubscriber);
 
+
+        //add subscriber into database
+        const subscriber = await prisma.subscriber.create({
+            data: {
+                manychatId: createdSubscriber.id,
+                phone: createdSubscriber.phone,
+            }
+        })
+
+        console.log('Subscriber created:', subscriber);
+        
+
         //add subscriber into ./subscribers.json
-        (subscribers.data as { id: string, phone: string }[])
-            .push({ id: createdSubscriber.id as string, phone: createdSubscriber.whatsapp_phone as string });
+        // (subscribers.data as { id: string, phone: string }[])
+        //     .push({ id: createdSubscriber.id as string, phone: createdSubscriber.whatsapp_phone as string });
 
         //save subscribers into ./subscribers.json
-        const fs = require('fs');
-        fs.writeFileSync('./pages/api/webhooks/kwify/subscribers.json', JSON.stringify(subscribers));
+        // const fs = require('fs');
+        // fs.writeFileSync('./pages/api/webhooks/kwify/subscribers.json', JSON.stringify(subscribers));
 
-        console.log('Subscribers:', subscribers);
+        // console.log('Subscribers:', subscribers);
 
         const addTagResponse = await fetch('https://api.manychat.com/fb/subscriber/addTagByName', {
             method: 'POST',
